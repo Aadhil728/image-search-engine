@@ -8,7 +8,7 @@ import {
   StockMovement,
   Warehouse
 } from '@/lib/inventoryApi';
-import styles from '@/styles/Inventory.module.css';
+import styles from '../../styles/Inventory.module.css';
 import InventoryLayout from '@/components/InventoryLayout';
 
 export default function MovementsPage() {

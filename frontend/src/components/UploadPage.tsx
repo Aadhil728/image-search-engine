@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { uploadProduct, UploadResponse } from "@/lib/api";
-import styles from "@/styles/Upload.module.css";
+import styles from "../styles/Upload.module.css";
 
 export default function UploadPage() {
   const [file, setFile] = useState<File | null>(null);

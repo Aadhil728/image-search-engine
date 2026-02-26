@@ -23,7 +23,7 @@ import {
   InventoryHealthData,
   AlertsSummary
 } from '@/lib/inventoryApi';
-import styles from '@/styles/InventoryDashboard.module.css';
+import styles from '../../styles/InventoryDashboard.module.css';
 import {
   AreaChart,
   Area,

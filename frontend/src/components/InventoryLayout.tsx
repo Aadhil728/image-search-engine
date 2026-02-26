@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '@/styles/InventoryLayout.module.css';
+import styles from '../styles/InventoryLayout.module.css';
 
 interface InventoryLayoutProps {
   children: React.ReactNode;

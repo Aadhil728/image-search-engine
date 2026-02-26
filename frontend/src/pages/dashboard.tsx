@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import { listProducts, deleteProduct, updateProduct } from '@/lib/api';
-import styles from '@/styles/Dashboard.module.css';
+import styles from '../styles/Dashboard.module.css';
 
 interface Product {
   id: string;

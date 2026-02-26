@@ -7,8 +7,8 @@ import {
   SearchResponse,
   SearchStatus,
   getSearchStatus,
-} from "@/lib/api";
-import styles from "@/styles/Search.module.css";
+} from "../lib/api";
+import styles from "../styles/Search.module.css";
 
 // Convert internal Docker URLs to localhost URLs for browser access
 const fixImageUrl = (url: string | undefined): string => {

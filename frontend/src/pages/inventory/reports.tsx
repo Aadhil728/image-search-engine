@@ -10,7 +10,7 @@ import {
   listWarehouses,
   Warehouse
 } from '@/lib/inventoryApi';
-import styles from '@/styles/Inventory.module.css';
+import styles from '../../styles/Inventory.module.css';
 import InventoryLayout from '@/components/InventoryLayout';
 
 type ReportType = 'stock-levels' | 'low-stock' | 'movements' | 'valuation';

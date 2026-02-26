@@ -8,7 +8,7 @@ import {
   resolveAlert,
   StockAlert
 } from '@/lib/inventoryApi';
-import styles from '@/styles/Inventory.module.css';
+import styles from '../../styles/Inventory.module.css';
 import InventoryLayout from '@/components/InventoryLayout';
 
 export default function AlertsPage() {
