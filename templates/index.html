@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nabco Image Search</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/static/header.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    {% include "header.html" %}
+
+    <main class="hero">
+      <div class="hero-inner">
+        <img class="logo" src="/assets/images/nabco.png" alt="nabo-logo" />
+        <h1>Furniture Image search for Nabco Furniture</h1>
+        <p class="subtitle">
+          Nabco Furniture Image Search uses visual recognition to instantly
+          match similar furniture designs from our catalog — streamlining
+          organization, style comparison, and product discovery.
+        </p>
+
+        <section class="card">
+          <h2>Nabco Image Search</h2>
+          <p class="card-subtitle">
+            Nabco Image Search makes furniture comparison simple. Upload an
+            image and instantly find similar designs from your catalog — fast,
+            accurate, and intuitive.
+          </p>
+
+          <div class="upload-bar">
+            <!-- Real input hidden -->
+            <input
+              id="fileInput"
+              class="file-input"
+              type="file"
+              accept="image/*"
+            />
+
+            <!-- Custom clickable control -->
+            <label class="file-drop" for="fileInput">
+              <span id="fileLabel" class="file-label">Choose an image...</span>
+              <span class="file-cta">Browse</span>
+            </label>
+
+            <!-- subtle clear -->
+            <button id="btnClear" class="btn-clear-mini" type="button">
+              Clear
+            </button>
+          </div>
+
+          <div class="stats-row" style="display: none">
+            <div class="stat">
+              <span>Indexed:</span>
+              <strong id="indexedVal">-</strong>
+            </div>
+
+            <div class="stat" style="display: none">
+              <span>Top-K:</span>
+              <input id="topkInput" type="number" min="1" value="10000" />
+            </div>
+
+            <div class="stat" style="display: none">
+              <span>Show results ≥</span>
+              <input
+                id="thresholdInput"
+                type="number"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.80"
+              />
+            </div>
+          </div>
+
+          <!-- Querry Image section -->
+          <div class="panel" style="margin: 14px 0px">
+            <div class="panel-title">Query Image</div>
+            <div class="query-box">
+              <img id="queryPreview" alt="Query preview" />
+            </div>
+          </div>
+
+          <button id="btnSearch" class="btn-search" type="button">
+            Find matches
+          </button>
+
+          <div class="status" id="status">Choose an image to search.</div>
+        </section>
+
+        <!-- Results (kept, but below like a second area) -->
+        <section class="results-wrap">
+          <div class="panel">
+            <div class="panel-title">Matches</div>
+            <div id="results" class="results-grid"></div>
+            <div id="emptyState" class="empty-state">No matches found.</div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="/static/header.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

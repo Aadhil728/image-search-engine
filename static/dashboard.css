@@ -1,0 +1,95 @@
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  background: #0f1724;
+  color: #d1e3f0;
+}
+.dashboard-layout {
+  display: flex;
+  min-height: 80vh;
+}
+.dashboard-sidebar {
+  width: 220px;
+  background: #071126;
+  padding: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.03);
+}
+.dashboard-sidebar .sidebar-brand {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.dashboard-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dashboard-sidebar nav li {
+  margin: 0.5rem 0;
+}
+.dashboard-sidebar nav a {
+  color: #9fb6c9;
+  text-decoration: none;
+}
+.dashboard-main {
+  flex: 1;
+  padding: 1.25rem;
+}
+.dashboard-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.kpi-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.kpi {
+  background: #06202a;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+.kpi-label {
+  font-size: 0.9rem;
+  color: #7fb0c7;
+}
+.kpi-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.recent-uploads {
+  background: #071826;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.recent-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.recent-table th,
+.recent-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+.recent-table img {
+  height: 40px;
+}
+@media (max-width: 900px) {
+  .kpi-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dashboard-sidebar {
+    display: none;
+  }
+}

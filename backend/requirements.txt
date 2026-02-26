@@ -1,0 +1,36 @@
+# FastAPI & Web Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+
+# Database (with pgvector support now)
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+pgvector==0.2.4
+alembic==1.12.1
+
+# Environment & Config
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# Storage (S3 / MinIO)
+boto3==1.34.4
+botocore==1.34.4
+
+# Image Processing
+pillow==10.0.0
+numpy==1.24.3
+
+# ML & CLIP Model (Phase 3)
+torch==2.1.1
+torchvision==0.16.1
+transformers==4.35.2
+
+# Security & Authentication
+PyJWT>=2.8.0,<3.0
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+
+# Utilities
+typing-extensions==4.8.0

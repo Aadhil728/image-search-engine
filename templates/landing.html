@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nabco Image Search - AI-Powered Visual Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/header.css?v=1.1" />
+    <link rel="stylesheet" href="/static/landing.css?v=1.1" />
+  </head>
+  <body>
+    {% include "header.html" %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container-width">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>Find Furniture Instantly with Visual AI</h1>
+            <p>
+              Upload any furniture image and discover similar designs from your
+              catalog in seconds. Powered by advanced computer vision
+              technology.
+            </p>
+            <div class="hero-buttons">
+              <a href="/" class="btn btn-primary">Try It Free</a>
+              <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-value">10K+</div>
+                <div class="stat-label">Images Indexed</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">500ms</div>
+                <div class="stat-label">Average Search</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">99%</div>
+                <div class="stat-label">Accuracy</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="/assets/images/home.png" alt="Nabco" class="hero-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container-width">
+        <div class="section-header">
+          <h2>Powerful Features</h2>
+          <p>Everything you need for visual product discovery</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">🔍</div>
+            <h3>AI-Powered Matching</h3>
+            <p>
+              Advanced CLIP vision model understands visual similarity, style,
+              and design elements
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightning Speed</h3>
+            <p>
+              Search through thousands of products in milliseconds with
+              optimized indexing
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">📊</div>
+            <h3>Confidence Scores</h3>
+            <p>
+              See similarity percentages to understand match quality at a glance
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎛️</div>
+            <h3>Smart Admin Panel</h3>
+            <p>
+              Bulk upload, manage, and organize your entire catalog effortlessly
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Works perfectly on desktop, tablet, and mobile devices</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🚀</div>
+            <h3>Production Ready</h3>
+            <p>
+              Built for enterprise scale with pagination support for 10,000+
+              images
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🔄</div>
+            <h3>Real-time Indexing</h3>
+            <p>
+              Automatically update search index when you add or remove products
+              instantly
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🛡️</div>
+            <h3>Secure & Reliable</h3>
+            <p>
+              Enterprise-grade security with optimized performance and uptime
+              guarantee
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container-width">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>Simple 3-step process to find matching products</p>
+        </div>
+        <div class="workflow">
+          <div class="workflow-step">
+            <div class="step-circle">1</div>
+            <h3>Upload Image</h3>
+            <p>Select any furniture image from your device</p>
+          </div>
+          <div class="workflow-connector">→</div>
+          <div class="workflow-step">
+            <div class="step-circle">2</div>
+            <h3>AI Analysis</h3>
+            <p>Our model analyzes design and visual features</p>
+          </div>
+          <div class="workflow-connector">→</div>
+          <div class="workflow-step">
+            <div class="step-circle">3</div>
+            <h3>Get Results</h3>
+            <p>Instantly see ranked matches with scores</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+      <div class="container-width">
+        <div class="section-header">
+          <h2>Built For Your Business</h2>
+          <p>Perfect for retailers, designers, and ecommerce teams</p>
+        </div>
+        <div class="use-cases-grid">
+          <div class="use-case">
+            <div class="use-case-icon">👥</div>
+            <h3>Customers</h3>
+            <p>
+              Find similar furniture by uploading inspiration images. Discover
+              alternatives instantly.
+            </p>
+          </div>
+          <div class="use-case">
+            <div class="use-case-icon">🏪</div>
+            <h3>Retailers</h3>
+            <p>
+              Improve customer satisfaction with instant visual search.
+              Cross-sell effectively.
+            </p>
+          </div>
+          <div class="use-case">
+            <div class="use-case-icon">✏️</div>
+            <h3>Designers</h3>
+            <p>
+              Research competitor designs. Find inspiration. Organize by visual
+              similarity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Section -->
+    <section class="tech-stack">
+      <div class="container-width">
+        <div class="section-header">
+          <h2>Built with Modern Tech</h2>
+          <p>Enterprise-grade technology for reliable performance</p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <h4>🤖 OpenAI CLIP</h4>
+            <p>
+              State-of-the-art vision language model for semantic understanding
+            </p>
+          </div>
+          <div class="tech-item">
+            <h4>⚙️ FastAPI</h4>
+            <p>High-performance Python web framework for production APIs</p>
+          </div>
+          <div class="tech-item">
+            <h4>📚 FAISS</h4>
+            <p>Efficient similarity search for millions of vectors</p>
+          </div>
+          <div class="tech-item">
+            <h4>🎨 Modern Frontend</h4>
+            <p>Responsive design with smooth animations and intuitive UX</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container-width">
+        <h2>Ready to Transform Furniture Discovery?</h2>
+        <p>Start using visual search today</p>
+        <a href="/" class="btn btn-primary btn-large">Get Started Free</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container-width">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>Questions? We'd love to hear from you</p>
+        </div>
+        <div class="contact-grid contact-row">
+          <a href="mailto:info@nabco.com" class="contact-item">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <p>info@nabco.com</p>
+          </a>
+          <a href="mailto:support@nabco.com" class="contact-item">
+            <div class="contact-icon">💬</div>
+            <h3>Support</h3>
+            <p>support@nabco.com</p>
+          </a>
+          <a href="https://nabco.com" target="_blank" class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <h3>Website</h3>
+            <p>nabco.com</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-width">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Nabco Image Search</h4>
+            <p>AI-powered visual search for furniture and product discovery</p>
+            <div class="social-links">
+              <a href="#" title="Twitter">𝕏</a>
+              <a href="#" title="LinkedIn">in</a>
+              <a href="#" title="GitHub">⚙</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h5>Product</h5>
+            <ul>
+              <li><a href="/">Search</a></li>
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#how-it-works">How It Works</a></li>
+              <li><a href="/#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="https://nabco.com" target="_blank">About Us</a></li>
+              <li><a href="#" target="_blank">Blog</a></li>
+              <li><a href="#" target="_blank">Careers</a></li>
+              <li><a href="#" target="_blank">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#" target="_blank">Privacy Policy</a></li>
+              <li><a href="#" target="_blank">Terms of Service</a></li>
+              <li><a href="#" target="_blank">Cookie Policy</a></li>
+              <li><a href="#" target="_blank">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 <strong>Nabco Image Search</strong>. All rights
+            reserved. | Powered by AI vision technology.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/header.js"></script>
+  </body>
+</html>

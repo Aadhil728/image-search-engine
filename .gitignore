@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+backend.env.local
+*.env
+
+# Node/Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+mysql_data/
+
+# Temporary files
+*.tmp
+*.log
+*.npy.tmp*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+index/embeddings.npy.tmp*
+images_db/
+assets/images/
+mysql_data/
+
+# Docker volumes
+mysql_data/
+pgvector_data/

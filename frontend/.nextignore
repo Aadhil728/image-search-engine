@@ -1,0 +1,14 @@
+# Next.js build cache
+
+.next
+\*.log
+
+# Dependencies
+
+node_modules
+.npx
+
+# Frontend
+
+dist
+build

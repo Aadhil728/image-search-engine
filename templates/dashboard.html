@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/header.css" />
+    <link rel="stylesheet" href="/static/dashboard.css" />
+  </head>
+  <body>
+    {% include "header.html" %}
+
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">Image Search</div>
+        <nav>
+          <ul>
+            <li><a href="/admin/dashboard">Dashboard</a></li>
+            <li><a href="/admin">Products</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <h1>Dashboard</h1>
+          <div class="topbar-actions">
+            <button id="rebuild-index-btn">Rebuild Index</button>
+          </div>
+        </header>
+
+        <section class="kpi-cards">
+          <div class="kpi" id="kpi-total">
+            <div class="kpi-label">Total Products</div>
+            <div class="kpi-value">—</div>
+          </div>
+          <div class="kpi" id="kpi-indexed">
+            <div class="kpi-label">Indexed</div>
+            <div class="kpi-value">—</div>
+          </div>
+          <div class="kpi" id="kpi-recent">
+            <div class="kpi-label">Recent Uploads (7d)</div>
+            <div class="kpi-value">—</div>
+          </div>
+          <div class="kpi" id="kpi-avg">
+            <div class="kpi-label">Avg Query Time</div>
+            <div class="kpi-value">—</div>
+          </div>
+        </section>
+
+        <section class="recent-uploads">
+          <h2>Recent Uploads</h2>
+          <table class="recent-table">
+            <thead>
+              <tr>
+                <th>Preview</th>
+                <th>SKU</th>
+                <th>Brand</th>
+                <th>Name</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="recent-body"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+  </body>
+</html>
